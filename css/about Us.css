@@ -1,0 +1,35 @@
+*{
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+body
+{
+	background-image: url('ferrari.jpg');
+	font-family: sans-serif;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+
+}
+.AboutUs-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+.AboutUs-content
+{
+	background-color: lightgrey;
+	border: 2px solid lightcoral;
+	 border-radius: 15px;
+	padding: 20px;
+	text-align: center;
+	width: 80%;
+	max-width: 800px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
