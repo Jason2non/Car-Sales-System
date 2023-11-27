@@ -1,9 +1,14 @@
+<?php
+require('connect.php');
+session_start();
+$fetch =  mysqli_query($sql,"SELECT * FROM `car`")or die(mysqli_error($sql));
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>CarShow Room</title>
-    <link rel="stylesheet" type="text/css" href="CSS/showroom.css">
+    <link rel="stylesheet" type="text/css" href="css/showroom.css">
 </head>
 <body>
     <header>
@@ -20,14 +25,16 @@
 
     <main>
         <section class="product-list">
+                  <?php while($row = mysqli_fetch_array($fetch))
+    {?>
             <!-- Product listings go here -->
             <div class="product">
-                <img src="img/car1.png" alt="#">
-                <h2>Mazda C X5</h2>
-                <p>Price: $15000</p>
+                <img src="<? echo $row['img'] ?>" alt="This is an Image">
+                <h2><? echo $row['carname'] ?></h2>
+                <p>Price: $ <? echo $row['price']?></p>
             <a href="cart.php"><button>Add to Cart</button></a>
             </div>
-            <div class="product">
+            <!--<div class="product">
                 <img src="img/cartwo.jpg" alt="#">
                 <h2>Nissan</h2>
                 <p>Price: $20000</p>
@@ -44,7 +51,11 @@
                 <h2>VOLVO</h2>
                 <p>Price: $30000</p>
              <a href="cart.php"><button>Add to Cart</button></a>
-            </div>
+            </div>-->
+            <?php
+              }
+          //}
+        ?>
             <!-- Repeat similar product listings as needed -->
         </section>
     </main>
