@@ -61,7 +61,7 @@ input[type="submit"]:hover {
 </head>
 <body>
     <h1>ADD A CAR</h1>
-    <form action="caradd.php" method="POST">
+    <form action="caradd.php" method="POST" enctype="multipart/form-data">
         <label for="make">Car Name</label>
         <input type="text" id="make" name="name" required>
         <label for="year">Model:</label>
@@ -84,7 +84,7 @@ input[type="submit"]:hover {
         <textarea id="description" name="description" ></textarea>
 
         <label for="image">Image URL:</label>
-        <input type="file" id="image" name="image" required><br><br>
+        <input type="file" id="image" name="carimage" required><br><br>
 
         <input type="submit" name="submit" value="Add Car">
     </form>
