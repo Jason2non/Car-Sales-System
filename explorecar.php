@@ -1,8 +1,15 @@
+<?php
+session_start();
+require('connect.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/fa/electric-car.png">
+    <link rel="stylesheet" type="text/css" href="css/bot\bot/css/bootstrap.css">
     <title>Explore Cars</title>
     <style>
         body {
@@ -19,14 +26,14 @@
             text-align: center;
         }
 
-        #car-container {
+        .car-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             max-width: 1200px;
             margin: 20px auto;
         }
-
+        .card
         .car-card {
             background-color: #fff;
             border-radius: 8px;
@@ -61,69 +68,26 @@
         <h1>EXPLORE CARS</h1>
     </header>
  <main>
-   <section>
-    <div id="car-container">
-         <div class="car-details">
-                <img src="img/carB.jpg" alt="Car 1">
-                <h3>Car Model 1</h3>
-                <p>Price: $30,000</p>
-                <p>Year: 2022</p>
+   <section class="car-container">
+           <div class="card" style="width: 18rem;">
+             <img src="img/mer.jpg" class="card-img-top" height="250px" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Mercedes Benz</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn btn-primary" style="background-color:#333; border:none;">Mercedes Benz</a>
             </div>
-            <div class="car-details">
-                <img src="img/carA.jpg" alt="Car 2">
-                <h3>Car Model 2</h3>
-                <p>Price: $17,000</p>
-                <p>Year: 2020</p>
+            <div class="card" style="width: 18rem;">
+             <img src="img/bwm.jpg" class="card-img-top" height="250px" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">BMW</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn btn-primary" style="background-color:#333; border:none;">BMW</a>
             </div>
-             
-            
-            <div class="car-details">
-            <img src="img/carC.jpg" alt="Car 2">
-                <h3>Car Model 3</h3>
-                <p>Price: $28,000</p>
-                <p>Year: 2016</p>
-            </div>
-            
-            <div class="car-details">
-            <img src="img/carD.jpg" alt="Car 2">
-                <h3>Car Model 4</h3>
-                <p>Price: $40,000</p>
-                <p>Year: 2010</p>
-            </div>
-          
-            <div class="car-details">
-                <img src="img/carE.jpg" alt="Car 2">
-                <h3>Car Model 5</h3>
-                <p>Price: $25,000</p>
-                <p>Year: 2019</p>
-            </div>
-            
-            
-            <div class="car-details">
-                <img src="img/carE.jpg" alt="Car 2">
-                <h3>Car Model 6</h3>
-                <p>Price: $30,000</p>
-                <p>Year: 2017</p>
-            </div>
-           
-            
-            <div class="car-details">
-                <img src="img/carF.jpg" alt="Car 2">
-                <h3>Car Model 7</h3>
-                <p>Price: $15,000</p>
-                <p>Year: 2021</p>
-            </div>
-        </div>
-
-        <!-- Add more car cards as needed -->
-
-    </div>
-    
     </section>
  </main>
     <section>   
         <div class="footer">
-        <p>&copy; 2023 Caspal Cars. All rights reserved.</p>
+         <p>&copy; 2023 Caspal Cars. All rights reserved.</p>
         </div>
     </section>
 </body>

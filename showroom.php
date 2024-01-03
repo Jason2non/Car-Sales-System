@@ -29,9 +29,9 @@ $fetch =  mysqli_query($sql,"SELECT * FROM `car`")or die(mysqli_error($sql));
     {?>
             <!-- Product listings go here -->
             <div class="product">
-                <img src="<? echo $row['img'] ?>" alt="This is an Image">
+                <img src="admin/uploads/<? echo $row['img'] ?>" alt="This is an Image">
                 <h2><? echo $row['carname'] ?></h2>
-                <p>Price: $ <? echo admin/upload/$row['price']?></p>
+                <p>Price: $<? echo $row['price']?></p>
             <a href="cart.php"><button>Add to Cart</button></a>
             </div>
             <!--<div class="product">

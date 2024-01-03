@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caspal Automobiles</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/fa/electri-car.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
@@ -14,7 +15,7 @@
                 <h1 style="font-weight:bold; color:yellow; ">CASPAL AUTOMOBILES</h1>
             </div>
             <ul class="nav-links">
-                <li style="#"><a href="index.php">HOME</a></li>
+                <li style=""><a href="index.php">HOME</a></li>
                 <li><a href="login.php">LOGIN</a></li>
                 <li><a href="register.php">REGISTER</a></li>
                 <li><a href="#contact">CONTACT</a></li>
