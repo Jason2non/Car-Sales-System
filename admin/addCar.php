@@ -83,7 +83,7 @@ input[type="submit"]:hover {
         <label for="description">Description:</label>
         <textarea id="description" name="description" ></textarea>
 
-        <label for="image">Image URL:</label>
+        <label for="image">Image upload:</label>
         <input type="file" id="image" name="carimage" required><br><br>
 
         <input type="submit" name="submit" value="Add Car">
